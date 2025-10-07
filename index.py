@@ -669,20 +669,23 @@
 # del student
 
 
-class logger:
-    def __init__(self,filename):
-        self.file = open(filename,'w')
-        self.file.write('This is our test case')
-        print("weite started")
+# class logger:
+#     def __init__(self,filename):
+#         self.file = open(filename,'w')
+#         self.file.write('This is our test case')
+#         print("weite started")
 
-    def log(self,message):
-        self.file.write(message+ '\n')
+#     def log(self,message):
+#         self.file.write(message+ '\n')
 
-    def __del__(self):
-        self.file.write("end"+ '\n')
-        self.file.close()
-        print("file has been closed")
+#     def __del__(self):
+#         self.file.write("end"+ '\n')
+#         self.file.close()
+#         print("file has been closed")
 
-loger = logger('new_name.txt')
-loger.log('this is the message')
-# del loger
+# loger = logger('new_name.txt')
+# loger.log('this is the message')
+# del loger 
+
+for i in range(1,11):
+    print(i)
